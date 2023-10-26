@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Cart from './pages/Cart'
+import ProductDetails from './Components/ProductDetails'
 
 function App() {
   let component
@@ -16,6 +17,9 @@ function App() {
     case "/cart":
       component = <Cart />
       break
+      case "productdetails/:id":
+        component = <ProductDetails />
+        break
   }
   return (
   <>
